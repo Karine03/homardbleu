@@ -1,9 +1,25 @@
 .banner {
-  height: 95vh;
+  //height: 95vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  img {
+    margin: auto;
+  }
+  p {
+    font-weight: bold;
+  }
 }
 
 .carousel {
-  height: 96vh;
+  //height: 96vh;
+  height: 100vh;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0 !important;
 }
