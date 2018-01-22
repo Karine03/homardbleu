@@ -1,0 +1,50 @@
+<div id="navbar">
+  <div class="navbar-container">
+    <% link_to "#screen1" do %>
+      HOMARD BLEU
+      <%#= image_tag "logo-text-blue.svg", class: "img-responsive" %>
+    <% end %>
+    <div class="navbar-container-right hidden-xs">
+      <%#= link_to "La cuisine", "#banner-2", class: "hvr-overline-reveal"%>
+      <%= link_to "Le restaurant", "#banner-3",class: "hvr-overline-reveal" %>
+      <%= link_to "Photos", "#gallery",class: "hvr-overline-reveal" %>
+      <a href="mailto:mamagotoparis@gmail.com" class="hvr-overline-reveal">Contact</a>
+      <%= link_to "Localisation", "#map"%>
+    </div>
+    <div class="button">
+      <a class="btn-open" href="#"></a>
+    </div>
+
+    
+    <div class="overlay">
+      <div class="wrap text-center">
+        <ul class="wrap-nav">
+          <li>
+            <%= link_to "La cuisine", "#banner-2", class: "nav-xs-link"%>
+          </li>
+          <hr>
+          <li>
+            <%= link_to "Le restaurant", "#banner-3", class: "nav-xs-link"%>
+          </li>
+          <hr>
+          <li>
+            <%= link_to "Photos", "#gallery", class: "nav-xs-link"%>
+          </li>
+          <hr>
+          <li>
+            <a href="mailto:mamagotoparis@gmail.com">Contact</a>
+          </li>
+          <hr>
+          <li>
+            <%= link_to "Localisation", "#contact", class: "nav-xs-link"%>
+          </li>
+          <hr>
+          <li>
+            <a href="#" class="btn-navbar hvr-hollow nav-xs-link" data-toggle="modal" data-target="#modal-resa">Réserver</a>
+          </li> 
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,28 @@
+#cuisine {
+  h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  h2 {
+    margin-top: 0;
+    margin-bottom: 33px;
+    font-weight: 100;
+  }
+  p {
+    width: 60%;
+    margin: 0 auto 20px auto;
+  }
+  a {
+    background: white;
+    padding: 20px 35px;
+    color: #373f50;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .button-container {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+}
