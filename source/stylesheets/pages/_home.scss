@@ -1,28 +1,176 @@
 #cuisine {
   h1 {
     margin: 0;
-    text-transform: uppercase;
     font-weight: 700;
   }
   h2 {
     margin-top: 0;
-    margin-bottom: 33px;
+    margin-bottom: 30px;
     font-weight: 100;
+    font-size: 16px;
+    text-transform: uppercase;
+    opacity: 0.4;
   }
   p {
     width: 60%;
     margin: 0 auto 20px auto;
+    line-height: 1.9;
   }
   a {
     background: white;
     padding: 20px 35px;
-    color: #373f50;
+    color: $dark-blue;
     font-weight: 700;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    &:hover {
+      color: white;
+      border: 2px solid white;
+      background-color: transparent;
+    }
   }
   .button-container {
     margin-top: 60px;
     margin-bottom: 20px;
   }
+  @media (max-width: $screen-xs) {
+    p {
+      width: 85%;
+    }
+  }
 }
+
+#restaurant {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  .left {
+    flex: 0 0 50%;
+    padding: 50px;
+    box-sizing: border-box;
+    p {
+      width: 65%;
+    }
+  }
+  .semi-banner {
+    height: 90vh;
+    flex: 0 0 47%;
+    background-size: cover;
+    background-position: center;
+  }
+  @media (max-width: $screen-sm) {
+    flex-direction: column;
+    height: inherit;
+    .left {
+      padding: 30px;
+      p {
+        width: 100%;
+      }
+    }
+    .semi-banner {
+      height: 50vh;
+      width: 100%;
+    }
+  }
+}
+
+#book {
+  a {
+    background: white;
+    padding: 20px 35px;
+    color: $red;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    &:hover {
+      color: white;
+      border: 2px solid white;
+      background-color: transparent;
+    }
+  }
+}
+
+
+#gallery {
+  .pictures {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .picture-card {
+    flex: 0 0 30%;
+    height: 25vw;
+    background-size: cover; 
+    background-position: center center;
+    margin: 8px;
+    position: relative;
+    @media (max-width: $screen-sm) {
+      flex: 0 0 46%;
+      height: 30vw;
+    }
+    @media (max-width: $screen-xs) {
+      flex: 0 0 100%;
+      height: 80vw;
+    }
+  }
+  @media (max-width: $screen-xs) {
+    padding: 30px 0;
+  }
+}
+
+.map-info {
+  position: absolute;
+  z-index: 3;
+  top: 60px;
+  left: 130px;
+  width: 400px;
+  background: white;
+  padding: 50px 20px;
+  border-radius: 4px;
+}
+.map-container {
+  position: relative;
+}
+
+.map-info, .contact-info {
+  h2{
+    font-size: 19px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+}
+
+.contact-container {
+  background: #eeeeee;
+  padding: 20px;
+}
+.contact-info {
+  padding: 20px;
+  background: white;
+  border-radius: 4px;
+}
+
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+.circle-icon {
+  height: 35px; 
+  width: 35px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: $dark-blue;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+

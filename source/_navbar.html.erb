@@ -4,12 +4,12 @@
       HOMARD BLEU
       <%#= image_tag "logo-text-blue.svg", class: "img-responsive" %>
     <% end %>
-    <div class="navbar-container-right hidden-xs">
-      <%#= link_to "La cuisine", "#banner-2", class: "hvr-overline-reveal"%>
-      <%= link_to "Le restaurant", "#banner-3",class: "hvr-overline-reveal" %>
+    <div class="navbar-container-right hidden-sm">
+      <%= link_to "La cuisine", "#cuisine",class: "hvr-overline-reveal" %>
+      <%= link_to "Le restaurant", "#restaurant", class: "hvr-overline-reveal"%>
       <%= link_to "Photos", "#gallery",class: "hvr-overline-reveal" %>
-      <a href="mailto:mamagotoparis@gmail.com" class="hvr-overline-reveal">Contact</a>
-      <%= link_to "Localisation", "#map"%>
+      <%= link_to "Contact", "#map"%>
+      <%= link_to 'Réserver', 'https://www.lafourchette.com/restaurant/le-homard-bleu/324643', target: 'blank', class: "btn-navbar" %>
     </div>
     <div class="button">
       <a class="btn-open" href="#"></a>
@@ -17,30 +17,26 @@
 
     
     <div class="overlay">
-      <div class="wrap text-center">
+      <div class="wrap">
         <ul class="wrap-nav">
           <li>
-            <%= link_to "La cuisine", "#banner-2", class: "nav-xs-link"%>
+            <%= link_to "La cuisine", "#cuisine", class: "nav-xs-link"%>
           </li>
-          <hr>
+          
           <li>
-            <%= link_to "Le restaurant", "#banner-3", class: "nav-xs-link"%>
+            <%= link_to "Le restaurant", "#restaurant", class: "nav-xs-link"%>
           </li>
-          <hr>
+          
           <li>
             <%= link_to "Photos", "#gallery", class: "nav-xs-link"%>
           </li>
-          <hr>
+          
           <li>
-            <a href="mailto:mamagotoparis@gmail.com">Contact</a>
+            <%= link_to "Contact", "#contact", class: "nav-xs-link"%>
           </li>
-          <hr>
+          
           <li>
-            <%= link_to "Localisation", "#contact", class: "nav-xs-link"%>
-          </li>
-          <hr>
-          <li>
-            <a href="#" class="btn-navbar hvr-hollow nav-xs-link" data-toggle="modal" data-target="#modal-resa">Réserver</a>
+            <%= link_to 'Réserver', 'https://www.lafourchette.com/restaurant/le-homard-bleu/324643', target: 'blank', class: "btn-navbar" %>
           </li> 
         </ul>
       </div>
