@@ -48,7 +48,17 @@ title: Restaurant Le Homard Bleu
 </div>
 
 <div class="text-center padded bg-red" id="book">
-  <%= link_to 'Réserver une table', 'https://www.lafourchette.com/restaurant/le-homard-bleu/324643', target: 'blank' %>
+  <a class="modal-button" data-target="#modal-booking">Réserver une table</a>
+
+</div>
+<div class="modal" id="modal-booking">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <div class="box">
+      <iframe src='https://ib.guestonline.fr/instabook/bookings/cRXCdTH' width='340px' height='450px' frameborder='0' allowTransparency='true' scrolling='yes' ></iframe>
+    </div>
+  </div>
+  <button class="modal-close"></button>
 </div>
 
 
@@ -114,6 +124,7 @@ title: Restaurant Le Homard Bleu
 </div>
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx3WH0kpKancawHg8STM60LCLwdo-VIqw"></script>
+
 
 <script type="text/javascript">
   var myLatlng = new google.maps.LatLng(48.8203576,2.3717394999999897);
