@@ -5,4 +5,5 @@ $(document).ready(function() {
   $(".modal-close, .modal-background").click(function() {
     $('.modal').removeClass('is-active');
   })
+  $("#modal-event").addClass('is-active');
 });

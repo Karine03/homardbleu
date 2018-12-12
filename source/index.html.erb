@@ -32,6 +32,8 @@ title: Restaurant Le Homard Bleu
   </p>
   <div class="button-container">
     <%= link_to 'Voir la carte', '/doc/menu_ete.pdf', target: 'blank' %>
+    <a data-target="#modal-event" class="modal-button">Menu de Noël & Nouvel an</a>
+
   </div>
 
 </div>
@@ -143,3 +145,15 @@ title: Restaurant Le Homard Bleu
     title: "You are here!"
   });
 </script>
+
+
+<div class="modal" id="modal-event">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <div class="box">
+      <%= image_tag 'menu_24.png' %>
+      <%= image_tag 'menu_31.png' %>
+    </div>
+  </div>
+  <button class="modal-close"></button>
+</div>

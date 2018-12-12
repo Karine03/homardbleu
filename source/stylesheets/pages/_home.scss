@@ -17,24 +17,35 @@
     line-height: 1.9;
   }
   a {
-    background: white;
+    background-color: transparent;
     padding: 20px 35px;
-    color: $dark-blue;
+    color: white;
     font-weight: 700;
     text-decoration: none;
     border-radius: 5px;
     font-size: 14px;
     transition: all 0.3s ease;
     border: 2px solid white;
+    margin: 0 10px;
     &:hover {
-      color: white;
+      color: $dark-blue;
       border: 2px solid white;
-      background-color: transparent;
+      background-color: white;
     }
   }
   .button-container {
     margin-top: 60px;
     margin-bottom: 20px;
+    @media (max-width: $screen-xs) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      a {
+        margin: 10px 0;
+        width: 60%;
+      }
+    }
   }
   @media (max-width: $screen-xs) {
     p {

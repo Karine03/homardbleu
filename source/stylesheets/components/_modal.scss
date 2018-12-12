@@ -38,9 +38,26 @@
     width: 90%;
     max-height: calc(100vh - 200px);
   }
+  img {
+    max-width: 48%;
+    border: 1px solid #d3d3d3;
+  }
 }
 
-
+#modal-event {
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: $screen-xs) {
+      flex-direction: column;
+      img {
+        max-width: 100%;
+        margin: 5px 0;
+      }
+    }
+  }
+}
 
 .modal.is-active {
   display: flex;
