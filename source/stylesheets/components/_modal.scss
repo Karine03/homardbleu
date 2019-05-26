@@ -33,7 +33,7 @@
   border-radius: 5px;
   padding: 15px 20px;
   overflow: scroll;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   @media (max-width: $screen-xs) {
     width: 90%;
     max-height: calc(100vh - 200px);
@@ -45,16 +45,15 @@
 }
 
 #modal-event {
-  .box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @media (max-width: $screen-xs) {
-      flex-direction: column;
-      img {
-        max-width: 100%;
-        margin: 5px 0;
-      }
+  .modal-content {
+    max-width: 500px;
+    text-align: center;
+    img {
+      max-width: 100%;
+    }
+    span {
+      font-weight: bold;
+      color: $red;
     }
   }
 }

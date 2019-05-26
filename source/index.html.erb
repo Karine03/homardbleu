@@ -28,7 +28,7 @@ title: Restaurant Le Homard Bleu
   </p>
 
   <p>
-    Cuisine terre et mer, vous pourrez également déguster la côte de boeuf de 1,2kg exceptionnelle et délicieuse, garnie au choix. Les plats du jour et desserts originaux combleront les gourmands.   
+    Cuisine terre et mer, vous pourrez également déguster la côte de boeuf de 1,2kg exceptionnelle et délicieuse, garnie au choix. Les plats du jour et desserts originaux combleront les gourmands.
   </p>
   <div class="button-container">
     <%= link_to 'Voir la carte', '/doc/menu_hiver.pdf', target: 'blank' %>
@@ -117,4 +117,15 @@ title: Restaurant Le Homard Bleu
 
 <div class="footer text-center">
   <p>©2016 HOMARD BLEU · Design and web development by <a href="http://www.poulpe.co">Poulpe</a></p>
+</div>
+
+<div class="modal" id="modal-event">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <div class="box">
+      <p>C’est la saison : <br>le homard canadien entier est à <span>22,80€</span> au lieu de 30€. <br>Profitez-en !</p>
+      <%= image_tag "homarg.jpg", class:"img-responsive" %>
+    </div>
+  </div>
+  <button class="modal-close"></button>
 </div>
