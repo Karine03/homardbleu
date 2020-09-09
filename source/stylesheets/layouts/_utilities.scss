@@ -6,6 +6,13 @@
   }
 }
 
+.full {
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
 .bg-blue {
   background-color: $dark-blue;
   color: white;
